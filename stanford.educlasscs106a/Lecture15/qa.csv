@@ -1,0 +1,56 @@
+Question Report,
+Report Generated:,"May 11, 2020 2:44 PM"
+Topic,Webinar ID,Actual Start Time,Actual Duration (minutes),# Question
+CS106A Lecture,737 778 224,"May 11, 2020 1:19 PM", 68, 44
+Question Details,
+#,Question,Asker Name,Asker Email,Answer(s),
+1,how we doing today friends!,emily klingaman ,ekling29@stanford.edu,,,live answered,,,,
+2,Will the diagnostic review sessions be recorded_,andrea capra ,acapra@stanford.edu,,Yep,,But we’d recommend coming in person if you can!
+3,will the review sessions be recorded?,sylvia lacayo ,sylcolt@stanford.edu,,Yep,But we’d recommend coming in person if you can!
+4,"So when you use x.replace(), it creates a new string (unless you specify x = x.replace())?",Jacob Knego ,jknego@stanford.edu,,"Even then, you’re creating a new string and storing its address in x"
+5,Is “line” pre-defined? How does it know it doesn’t mean “word” or some other delimited unit?,isabel salovaara ,isalovaa@stanford.edu,,,"""line"" is just the name of a string variable.  When you read the file, python reads it line by line.",,,
+6,Is line a defined element (like pixel in image) or is it just a variable name?,Ryan Bernstein ,rbernste@stanford.edu,,"It’s a variable name, but so is pixel",,,
+7,is there a way to go the opposite way? like go up the text rather than down?,Nickolas Oar ,nickoar@stanford.edu,,Not with a file
+8,Is line stored as a list of characters?,Hemant Chaudhary ,hemantch@stanford.edu,,It’s a string,line is a string
+9,"something I'm confused abt: 
+You store file as a 'variable' type; does that mean it is immutable 
+and that you're only modifying a copy in Python?",rose wong ,ciwong@stanford.edu,,"You can think of it as a reference to a file in your computer somewhere - you can change it to refer to another file, if you’d like, and also ways to write to that file (although we won’t be talking about that much)"
+10,the /n is there just automatically because of being a .txt program?,juan jose martinez ,jmlayuno@stanford.edu,,Yes.  The \n is the "return" character at the end of each line in a text file.
+11,how come there is still a space between the stanzas?,sylvia lacayo ,sylcolt@stanford.edu,,live answered,There are blank lines between stanzas in the original text file.
+12,"how does python know that elem is a single element in an array, or line is a whole line in text?",Katerina Marinou ,marinou@stanford.edu,,The collection you’re iterating over will give you back whatever an individual element is,
+13,"Should we just take for granted that the “for-each” loop uses the line as the unit of measure? What about each character, etc.?",eric benitez ,ebenitez@stanford.edu,,It’ll always give you back a line,
+14,Won't line = line.strip() replace the original line with the stripped line?,Rafael Vila ,rvila@stanford.edu,Won't line = line.strip() replace the original line with the stripped line?,Yes.  The stripped line is just the original line without the newline at the end.,"It won’t replace it in the text, but the line variable will now be stripped, yes"
+15,Why didn't the second loop work? Wouldn't it repeat the same output as above?,Bianca Pinasco ,bpinasco@stanford.edu,,"We just talked about it, but the file doesn’t reset to the start at the end of the first for loop."
+16,"when it says the “file object,” does that refer to f? or what does it refer to?",Louise Zeng ,louisez@stanford.edu,,It’s f!
+17,still don’t get line.strip role =/,juan jose martinez ,jmlayuno@stanford.edu,,,,,"Here, it just removed the ""return"" character at the end of each line in the file.",,"Every line in a file includes a “\n” character at the end, which represents a line break. Printing already adds a new line, so we don’t need the \n from a line. .strip() removes that newline character from the line.",
+18,So next() would have returned the first line or the second?,Nestor Walters ,waltersx@stanford.edu,,The first!
+19,What does next(f) do again?,Nchang ,s5813@stanford.edu,,Skips the first line of the file
+20,perfect thanks!! :),juan jose martinez ,jmlayuno@stanford.edu,,
+21,Can you turn the file into a list and then call the list in the while loop?,Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,
+22,Is there a way to read a file word-by-word and not just line-by-line?,trevor carrell ,carrtre@stanford.edu,,"No, iterating over a file will always give you a line. You could break that line up into words, though!"
+23,How do you break a line up into words?,trevor carrell ,carrtre@stanford.edu,,"Here, we're just treating each line in the file as a ""word"" (or phrase) for the game.",There’s a function called .split() which returns a list of the space-separated words in the string,"Each line is just a string, so you could use string operations on it to break it up.",
+24,could you also say word.append(line)?,sylvia lacayo ,sylcolt@stanford.edu,,As opposed to?
+25,how can you ensure that you dont reuse words?,sylvia lacayo ,sylcolt@stanford.edu,,You can’t!
+26,Does “Pat Hanahan” count as one word or two?,kyrstyn ong ,kong1@stanford.edu,,"In this case, one ‘word’, which is maybe a misomer :)",
+27,should it be for line in f?,Carl Schoeller ,carlscho@stanford.edu,,"Yep, I’ll correct him in a sec"
+28,How can we export a game we create (e.g. heads up) to a different user friendly userface (anything other than pycharm)?,Bianca Pinasco ,bpinasco@stanford.edu,,"It’s a little tricky in Python, unfortunately. There are some ways to do it but it’s a little beyond what we know how to do right now."
+29,"Q: could you also say word.append(line)?
+A: As opposed to?
+
+Chris wrote word.append(word) within his for line in list function so I was just wondering if we could append lines onto our new list instead of words",sylvia lacayo ,sylcolt@stanford.edu,,"I’m not sure I understand - he’s appending to words, which is the list that is getting returned"
+30,"why does it say ‘as f’
+but then line in ‘file’?",Nestor Walters ,waltersx@stanford.edu,,Typo! It should be for line in f
+31,is that for line in f instead of line in file (as Brahm mentioned previously),Chenbo Wang ,wangcb@stanford.edu,,Yep
+32,will the value be stored as string?,Chenbo Wang ,wangcb@stanford.edu,,Yep
+33,"when should you use a canvas, and when should you make a blank image using simpleimage?",Carl Schoeller ,carlscho@stanford.edu,,"There isn't a hard rule, but generally, for drawing, you should use a canvas.  When you are doing manipulations of images, then use blank image from simpleimage."
+34,How to you split by tab or space?,Rafael Vila ,rvila@stanford.edu,How to you split by tab or space?,The character \t represents "tab".  You can give split on tab with: line.split('\t')
+35,Does the split command turn the string into a list?,Anna Ascheman ,anna12@stanford.edu,,"It returns a new list, but yes",
+36,does split store things as a list?,Asmaa Sultan ,asmaa@stanford.edu,,"Yes, it stores them in a list"
+37,Is there a way to split by a delimeter without removing the delimeter from the output?,Frank Charbonier ,fcharb@stanford.edu,,Nope
+38,"If you want to an excel file,do you need to split the elements if they are already split in different excel cells?",Eirini Tsekitsidou ,eirinit@stanford.edu,,"So excel files are represented a little differently, but can be exported to a format called CSV (comma separated values) which this sort of code can be used on",
+39,Where is parts coming from?,Nchang ,s5813@stanford.edu,,It’s the return value of the .split function
+40,"I thought we need to plot the longitude first… so plot(canvas, long, lat)?",avrum noor ,avrum@stanford.edu,,live answered
+41,Could you explain longitude_to_x?,Jinal Mehta ,jinal@stanford.edu,,live answered
+42,cuz longitude is the x-coordinate?,avrum noor ,avrum@stanford.edu,,live answered
+43,Will there be an opportunity to learn how to export outside of python a game (e.g. heads up) or an animation we create ? Any chance we can make a video or extra session?,Bianca Pinasco ,bpinasco@stanford.edu,,live answered
+44,Why you didn’t have to include the “retunr” command to pass the long and lat to the graph function?,Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,live answered

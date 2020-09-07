@@ -1,0 +1,48 @@
+Question Report,
+Report Generated:,"May 27, 2020 5:43 PM"
+Topic,Webinar ID,Actual Start Time,Actual Duration (minutes),# Question
+CS106A Lecture,737 778 224,"May 27, 2020 1:19 PM", 71, 42
+Question Details,
+#,Question,Asker Name,Asker Email,Answer(s),
+1,How are we doing today friends!,emily klingaman ,ekling29@stanford.edu,,It’s too hot here and my laptop is freaking out!,,,
+2,Will we get some practice with object-oriented-programming with our last assignment?,andrea capra ,acapra@stanford.edu,,Yep - we haven’t decided whether it’ll be mandatory or an extension but it’ll likely be there!,,You will certainly get experience with building a larger scale program.  You're going to make a search engine!,
+3,Is variable type and class the same thing?,Anna Ascheman ,anna12@stanford.edu,,"A class defines a new variable type, but some already come built into Python, like ints and lists!"
+4,is in this slide the function "bark()" an example of a method?,Brando Cremona ,bcremona@stanford.edu,,Yep!
+5,wouldn't you call bark(simba) instead of simba.bark() ?,Bianca Pinasco ,bpinasco@stanford.edu,,"Nope, because it’s a method of the Dog class. It’s just like doing list.append() rather than append(list)",Python fills in the "self" parameter with the object that the method is called on.
+6,Variables = instances?,Bianca Pinasco ,bpinasco@stanford.edu,,Instances of a class are stored in variables
+7,"Can you use other classes while defining a new class? Say if I want to define ball, can I use tkinter in that definition?",Carl Schoeller ,carlscho@stanford.edu,,Yep
+8,They can't all use the same variable for oval?,jason hernandez ,jhern@stanford.edu,,"Nope, because they’re separate ovals on the screen",
+9,building off of Bianca’s question… having trouble distinguishing instances and variables,jeong shin ,jyshin@stanford.edu,,Instances are actual objects defined using the blueprint that a class provides. Variables just store values (which might be instances of a class),Instances are objects that are stored in a variable.  So the variable essentially refers to the object (which is an instance of a class)
+10,"I have been working on an extension of this exact problem for a few weeks now, where the balls represent molecules. I have used lists within lists, but as the number of 'molecules' increases over 100, the animation becomes kind of chunky (slow). I am wondering if there is a particular collection/data structure which will allow the animation to run in live time faster than others?",Thomas Gill ,tgill3@stanford.edu,,"That’s probably not a data structures problem so much as it is just a lot of balls need to be moved before you update the canvas, so it looks a little stuttered. If you’re interested in more sophisticated solutions to this issue, feel free to post on Ed!",
+11,"so you can have 10 dictionaries in the list balls, all with the same name “ball” ?",sylvia lacayo ,sylcolt@stanford.edu,,It’s just a list of 10 dictionary addresses - none of them are called ‘ball’ in the list
+12,The 5 and 15 is locking the angle the balls are always moving at?,jason hernandez ,jhern@stanford.edu,,"It’s a random range between 5 and 15, but yes, those are fixed",,,
+13,How do the balls in the list stay different if they’re named the same?,James Collings ,jdc0405@stanford.edu,,"The name is just how they’re referred to in the for loop - remember that they’re stored at different addresses, and those addresses are stored in the list",Items in lists aren't named.  The list isn't a dictionary.  The list is just storing a bunch of dictionaries.
+14,Is the .update method for ball and canvas different?,Siew Ting Melissa Tan ,stmtan@stanford.edu,,"Yep, we’ll show it to you in a sec",,
+15,"so the create.ball is a new class pass from this new program to the main one, right?",Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,Yep
+16,Thanks!,Siew Ting Melissa Tan ,stmtan@stanford.edu,,
+17,So there’s no reason to import tkinter to Ball.py?,youngju kim ,youjkim9@stanford.edu,,"Nope, because the canvas has an update method",You don't need to import tkinter in Ball since you're not directly using functions from tkinter.  The functions you are calling are through the canvas.,
+18,so python can read from different files at the same time without having to be in the same “window”?,Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,"Yes, Python doesn’t care what you have open in PyCharm"
+19,regarless the length of the new program,Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,
+20,is it possible to define your class in your primary program file? i can see how it would be bad style but would it also malfunction?,sylvia lacayo ,sylcolt@stanford.edu,,"You can do that, but it’s not ideal style"
+21,how is each ball variable differentiated?,Wen Zhang ,wenzhang@stanford.edu,,Each ball is stored at a different location in your computer’s memory
+22,so calling ball.etc calls that file?,Alain Perez ,alainp23@stanford.edu,,Yep
+23,so classes are like a more robust function instead of decompsition within a program you decompose across multiple .py files,jason hernandez ,jhern@stanford.edu,,"Amongst other advantages, yes!"
+24,"So when you say simba = Dog(), you’re just saying that the simba variable is the dog class?",benjamin midler ,bmidler@stanford.edu,,"An instance of the dog class, yep"
+25,does creating juno after simba not overwrite the previous simba dog?,Brando Cremona ,bcremona@stanford.edu,,"Nope, it’s just like making two lists"
+26,"but all the many dogs created just could be called simba and juno, right? or how does it work with for loops",Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,"The name is just how they’re referred to in the for loop - remember that they’re stored at different addresses, and those addresses are stored in the lis"
+27,if you did want to make that many dogs with the for loop what would the body look like? like how do you make a different variable for each loop,jeong shin ,jyshin@stanford.edu,,dogs = [] for i in range(400):     dog = Dog()     dogs.append(dog)
+28,"ohhh, thats right. Woof is the only thing repeated. Thanks to remind me",Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,
+29,Why don’t you have to define times_barked as a dictionary?,benjamin midler ,bmidler@stanford.edu,,Python sets up the dictionary to keep track of attributes (instance variables) of an object,"It’s just an instance variable int inside the class - because it’s a count, it can just be an int and not a dictionary. The __dict__ method makes that dictionary for you"
+30,Is simba or times barked the instance variable? And what do you call whatever (simba or times barked) is not the instance variable?,Anna Ascheman ,anna12@stanford.edu,,"Simba is the instance, and times_barked is the instance variable!"
+31,Wasn’t the data for immutable types stored in stack?,youngju kim ,youjkim9@stanford.edu,,"That was a simplification earlier in the quarter; as a matter of fact, in Python, only references are stored on the stack",,The reference (memory address) is stored in the stack.  The value is stored in the heap.
+32,"weird question: why wouldn't the references (numbers) for x,y,z be sequential?",Thomas Gill ,tgill3@stanford.edu,,Not a weird question at all! The way your operating system allocates memory is not necessarily sequential (or perhaps another program grabbed the memory address immediately after),
+33,does that reference (456…) lives in the ram memory?,juan jose martinez ,jmlayuno@stanford.edu,,All of this is in RAM!
+34,why is it 0?  because it is a new variable?,Leslie Espinoza-Campomanes ,leslieec@stanford.edu,,"The 0 was the reference count, which was how many variables refer to that int. When the 6 is created, no variables are referring to it yet so it has a refcount of 0."
+35,"how is using URLs efficient? it seems like you need space for these long tags and space for the variable itself, thats like double",Sriram Narasimhan ,sriram3@stanford.edu,,It can be inefficient.  But Python is more focused on ease of use than efficiency.,"The answer is it’s not :) Python variables take up a bunch of space, which is one of the reasons that for systems with very little memory, Python isn’t used very frequently. Python errs on the side of making life easier for the programmer"
+36,"sorry, I should have been more specific. if I want to see the attributes of ball #5, what variable name would i use to find ball #5?",Wen Zhang ,wenzhang@stanford.edu,,balls[4],"If the balls are in a list called ""balls"", you'd refer to balls[4]"
+37,"are reference URLs created randomly, like how does python decide what an address is",carolina sculti ,csculti@stanford.edu,,Python asks your OS for a memory location and your OS gives you back a memory address with enough space for whatever you’re trying to make?,That was supposed to be an ! at the end :),There is a memory manager that determines where there is "free" memory to be used.  The memory manager gives Python memory addresses that can be used to store new values.,
+38,cool thanks!,Wen Zhang ,wenzhang@stanford.edu,,
+39,Whats an OS?,carolina sculti ,csculti@stanford.edu,,Operating System!
+40,ohhh cool,carolina sculti ,csculti@stanford.edu,,
+41,"For the __dict__ function with the simba example, what is the ‘times barked’ and ‘2’? Are they the value and ref count?",Anna Ascheman ,anna12@stanford.edu,,live answered,
+42,do functions also have special “values” that can be referenced?,jon johnson ,jjohn8@stanford.edu,,,live answered
